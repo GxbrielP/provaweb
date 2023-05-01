@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+    <script>
+
+    </script>
+</head>
+<body>
+
+    <header>
+    <a href="index.html"><img id="logo" src="img/logo.png" alt=""></a>
+    <a href="cadastro.html"><img id="user" src="img/user.png" alt=""></a>
+    <div id="username">
+     Usuário não autenticado
+    </div>
+    </header>
+
+    <div>
+        Tipo de Página <br>
+        <label for="pgnormal"><input type="radio" name="tipopg" id="pgnormal" checked>Normal</label> <br>
+        <label for="pgcustom" onclick=""><input type="radio" name="tipopg" id="pgcustom">Custom</label> <br>
+    </div>
+
+    <div id="cadastro">
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Nome" autofocus required><br>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required><br>
+           
+            <br> Sexo: <br>
+            <label for="H"> Homem </label> <input type="radio" name="sexo" id="H" checked><br>
+            <label for="M"> Mulher </label> <input type="radio" name="sexo" id="M" ><br>
+           
+            <p>
+                <select name="grau" id="">
+                    <option value="1" selected disabled> Grau de Maçom </option>
+                    <option value="2"> Mestre Maçom </option><br>
+                    <option value="2"> Companheiro Maçom </option><br>
+                    <option value="3"> Aprendiz Maçom </option><br>
+                </select><br>
+            </p>
+
+            Data de Nascimento: <br>
+            <input type="date" name="data" id=""><br>
+
+            <br> Estado Civil: <br> 
+            <label for="sol"> Solteiro(a) </label> <input type="radio" name="estado" id="solteiro"><br>
+            <label for="cas"> Casado(a) </label> <input type="radio" name="estado" id="casado" ><br>
+            <label for="sep"> Separado(a) </label> <input type="radio" name="estado" id="separado" ><br>
+            <label for="div"> Divorciado(a) </label> <input type="radio" name="estado" id="divorciado"><br>
+            <label for="viu"> Viúvo(a) </label> <input type="radio" name="estado" id="viuvo"><br>
+            
+            <br> <input type="submit" value="CADASTRAR">
+    </div>
+    
+    <footer>
+        Luigi Garcia Marchetti e Gabriel Eduardo Pereira
+    </footer>
+    
+</body>
+</html>

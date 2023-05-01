@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(58, 58, 58);
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    background-color: rgb(130, 208, 12);
+    height: 8vh;
+    margin: 0;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(15, 167, 152);
+}
+
+#logo {
+    height: 8vh;
+    float: left;
+}
+
+#user {
+    float: right;
+    height: 7vh;
+    padding-top: 0.5vh;
+    padding-right: 1vh;
+}
+
+#username {
+    margin-top: 5vh;
+    margin-right: 1vh;
+    float: right;
+}
+
+#login {
+    text-align: center;
+    font-size: xx-large;
+    align-items: center;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    padding: 1vh;
+    padding-top: 2vh;
+    height: 7vw;
+    width: 12vw;
+    ;
+}
+
+#cadastro {
+    text-align: center;
+    position: fixed;
+    top: 25%;
+    left: 45%;
+    padding: 1vh;
+    padding-top: 2vh;
+    height: 52%;
+    width: 12vw;
+    background-color: white;
+}
+
+ ul {
+    list-style: none;
+    font-size: x-large;
+    border: solid rgb(130, 208, 12) 3px;
+    color: white;
+    width: 20%;
+    padding: 20px;
+ }
+
+ li {
+    padding: 3px;
+ }
+
+ @media (max-width: 768px){
+    nav {
+        width: 100vw;
+        text-align: center;
+    }
+    ul, li {
+       font-size: small;
+       display: inline;
+       padding: 0px;
+       
+    }
+ }
+ 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(130, 208, 12);
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+button {
+    margin-top: 10px;
+}
