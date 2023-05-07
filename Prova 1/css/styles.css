@@ -46,7 +46,7 @@ footer {
     align-items: center;
     position: fixed;
     top: 35%;
-    left: 45%;
+    left: 45%; 
     padding: 1vh;
     padding-top: 2vh;
     height: 7vw;
@@ -63,7 +63,6 @@ footer {
     padding-top: 2vh;
     height: 52%;
     width: 12vw;
-    background-color: white;
 }
 
  ul {
@@ -81,14 +80,34 @@ footer {
 
  @media (max-width: 768px){
     nav {
-        width: 100vw;
+        width: 100%;
+        display: inline;
         text-align: center;
+        position: sticky;
     }
     ul, li {
        font-size: small;
        display: inline;
-       padding: 0px;
+        padding: 1.28px;
        
+    }
+
+    #login {
+        margin-left: 25vw;
+        margin-top: 25vw;
+        top: 0%;
+        left: 0%;
+        
+    }
+
+    #cadastro {
+        position: relative;
+        display: inline;
+        margin-left: 25vw;
+        margin-top: 25vw;
+        top: 0%;
+        left: 0%;
+        
     }
  }
  
