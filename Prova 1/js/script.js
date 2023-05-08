@@ -6,9 +6,9 @@ function assignValues(){
 
     let sexo = document.getElementsByName('sexo');
     let sexoValue;
-    for (let i=0; i<sexo.length;){
+    for (let i=0; i<sexo.length; i++){
         if (sexo[i].checked){
-            sexoValue = sexo[i].innerHTML;
+            sexoValue = sexo[i].value;
         }
     }
     console.log(sexoValue)
@@ -17,9 +17,9 @@ function assignValues(){
 
     let estado = document.getElementsByName('estado');
     let estadoValue;
-    for (let i=0; i<estado.length;){
+    for (let i=0; i<estado.length; i++){
         if (estado[i].checked){
-            estadoValue = estado[i].innerHTML;
+            estadoValue = estado[i].value;
         }
     }
     console.log(estadoValue)
