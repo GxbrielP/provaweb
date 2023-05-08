@@ -24,14 +24,14 @@
     <form action="#" method="post" name="formCadastro">
         <div>
             Tipo de Página <br>
-            <label for="pgnormal"><input type="radio" name="tipopg" id="pgnormal" checked>Normal</label> <br>
-            <label for="pgcustom" onclick=""><input type="radio" name="tipopg" id="pgcustom">Custom</label> <br>
+            <label for="pgnormal"><input type="radio" name="tipopg" id="pgnormal" checked onclick="deleteCustom()">Normal</label> <br>
+            <label for="pgcustom" onclick=""><input type="radio" name="tipopg" id="pgcustom" onclick="createCustom()">Custom</label> <br>
         </div>
 
         <div id="cadastro">
 
-                <input type="text" name="login" placeholder="Login" autofocus required id="usuario"><br>
-                <input type="text" name="senha" placeholder="Senha" required id="senha"><br>
+                <input type="text" name="nome" placeholder="Nome" autofocus required id="nome"><br>
+                <input type="text" name="sobrenome" placeholder="Sobrenome" required id="sobrenome"><br>
             
                 <br> Sexo: <br>
                 <div id="sexo">
@@ -59,7 +59,7 @@
                 
                 <br> <input type="submit" value="CADASTRAR" onclick="assignValues()">
         </div>
-    
+    </form>
     <footer>
         Luigi Garcia Marchetti e Gabriel Eduardo Pereira
     </footer>
