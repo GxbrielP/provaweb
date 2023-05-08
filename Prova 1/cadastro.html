@@ -21,7 +21,7 @@
      Usuário não autenticado
     </div>
     </header>
-    <form action="#" method="post" name="formCadastro">
+    
         <div>
             Tipo de Página <br>
             <label for="pgnormal"><input type="radio" name="tipopg" id="pgnormal" checked onclick="deleteCustom()">Normal</label> <br>
@@ -29,14 +29,14 @@
         </div>
 
         <div id="cadastro">
-
+            <form action="" name="formCadastro">
                 <input type="text" name="nome" placeholder="Nome" autofocus required id="nome"><br>
                 <input type="text" name="sobrenome" placeholder="Sobrenome" required id="sobrenome"><br>
             
                 <br> Sexo: <br>
                 <div id="sexo">
-                    <label for="H"> Homem </label> <input type="radio" name="sexo" id="H" checked><br>
-                    <label for="M"> Mulher </label> <input type="radio" name="sexo" id="M" ><br>    
+                    <label for="H"> Homem </label> <input type="radio" name="sexo" id="H" value="H" checked><br>
+                    <label for="M"> Mulher </label> <input type="radio" name="sexo" id="M" value="M"><br>    
                 </div>
                 <p>
                     <select name="grau" id="grau">
@@ -51,15 +51,16 @@
                 <input type="date" name="data" id="data"><br>
 
                 <br> Estado Civil: <br> 
-                <label for="sol"> Solteiro(a) </label> <input type="radio" name="estado" id="solteiro"><br>
-                <label for="cas"> Casado(a) </label> <input type="radio" name="estado" id="casado" ><br>
-                <label for="sep"> Separado(a) </label> <input type="radio" name="estado" id="separado" ><br>
-                <label for="div"> Divorciado(a) </label> <input type="radio" name="estado" id="divorciado"><br>
-                <label for="viu"> Viúvo(a) </label> <input type="radio" name="estado" id="viuvo"><br>
+                <label for="sol"> Solteiro(a) </label> <input type="radio" name="estado" id="solteiro" value="sol"><br>
+                <label for="cas"> Casado(a) </label> <input type="radio" name="estado" id="casado" value="cas"><br>
+                <label for="sep"> Separado(a) </label> <input type="radio" name="estado" id="separado" value="sep"><br>
+                <label for="div"> Divorciado(a) </label> <input type="radio" name="estado" id="divorciado" value="div"><br>
+                <label for="viu"> Viúvo(a) </label> <input type="radio" name="estado" id="viuvo" value="viu"><br>
                 
                 <br> <input type="submit" value="CADASTRAR" onclick="assignValues()">
+            </form>
         </div>
-    </form>
+
     <footer>
         Luigi Garcia Marchetti e Gabriel Eduardo Pereira
     </footer>
